@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+html,body{
+    overflow: hidden;
+}
+.main{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.card{
+    position: relative;
+    width: 30vw;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, .2);
+    padding: 1vw;
+    border-radius: 16px;
+    color: #fff;
+}
+.search{
+    position: relative;
+    width: 100%;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    color: beige;
+}
+.search>input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255,255,.2);
+    outline: none;
+    color: #fff;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 0px 48px 0px 42px;
+    font-weight: 500;
+}
+.search>input::placeholder{
+    color: #fff;
+    text-transform: capitalize;
+}
+.search>i{
+    position: absolute;
+    left: 10px;
+    font-size: 20px;
+}
+.search>button{
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    background: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 0 40px 0 5px;
+    cursor: pointer;
+}
+.location-not-found{
+    margin-top: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.location-not-found>h1{
+   font-size: 20px;
+   margin-block-end: 15px;
+}
+.location-not-found>img{
+    width: 80%;
+}
+.wether-box{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-block: 60px;
+}
+.wether-box>img{
+   width: 60%;
+}
+.wether-info{
+    text-align: center;
+    margin: 20px;
+}
+.wether-info .tempreture{
+    position: relative;
+    font-size: 60px;
+    font-weight: 800;
+}
+.wether-info .tempreture>sup{
+    position: absolute;
+    font-size: 20px;
+    font-weight: 600;
+}
+.wether-info .discription{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.wether-details{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.wether-details .humidity, .wind{
+    display: flex;
+    align-items: center;
+}
+.humidity{
+    margin-left: 20px;
+}
+.wind{
+    margin-right: 20px;
+}
+.humidity>i, .wind>i{
+    font-size: 35px
+}
+.text{
+    margin-left: 10px;
+    font-size: 16px;
+}
+.text>span{
+    font-size: 20px;
+    font-weight: 700;
+}
